@@ -29,14 +29,12 @@ class DataTransformation:
 
             num_pipeline=Pipeline(
                 steps=[
-                    ('imputer',SimpleImputer(strategy="median")),
                     ('scaler',StandardScaler())
                 ]
             )
             cat_pipeline=Pipeline(
                 steps=[
-                    ('imputer',SimpleImputer(strategy="most_frequent")),
-                    ('scaler',StandardScaler())
+                   ('scaler',StandardScaler())
                 ]
             )
             logging.info("scaling of the data is completed")
@@ -65,6 +63,7 @@ class DataTransformation:
             logging.info("read the train and test data")
             train_df=train_df.drop_duplicates().reset_index(drop=True)
             test_df=test_df.drop_duplicates().reset_index(drop=True)
+           
 
             logging.info("The duplicates had been removed")
 
@@ -90,7 +89,7 @@ class DataTransformation:
             ]
 
             test_arr=np.c_[
-                input_feature_test_df,np.array(target_feature_test_df)
+                input_feature_test_arr,np.array(target_feature_test_df)
             ]
             logging.info(f"Saved preprocessing object.")
 
