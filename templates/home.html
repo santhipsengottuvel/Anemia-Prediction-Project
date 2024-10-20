@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Performance Indicator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Anemia Prediction</h1>
+
+        <!-- Prediction Form -->
+        <form action="{{ url_for('predict_datapoint') }}" method="POST">
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" name="gender" id="gender" required>
+                    <option value="" disabled selected>Select your Gender</option>
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="hemoglobin">Enter your Hemoglobin Value</label>
+                <input class="form-control" type="number" name="hemoglobin" id="hemoglobin" placeholder="Enter Hemoglobin value" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="MCH">Enter your MCH Value</label>
+                <input class="form-control" type="number" name="MCH" id="MCH" placeholder="Enter MCH value" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="MCHC">Enter your MCHC Value</label>
+                <input class="form-control" type="number" name="MCHC" id="MCHC" placeholder="Enter MCHC value" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="MCV">Enter your MCV Value</label>
+                <input class="form-control" type="number" name="MCV" id="MCV" placeholder="Enter MCV value" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <input class="btn btn-primary" type="submit" value="Predict Anemia">
+            </div>
+        </form>
+
+        <!-- Prediction Result -->
+        {% if results %}
+            <div class="mt-4">
+                <h2 class="text-center">Prediction Result:</h2>
+                <h3 class="text-center">{{ results }}</h3>
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery (optional, for UI enhancements) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Heading */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #3a3a3a;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #3a3a3a;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    margin-top: 20px;
+}
+
+/* Input Fields */
+input[type="number"],
+select {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #5cb85c;
+    outline: none;
+}
+
+/* Buttons */
+input[type="submit"] {
+    background: linear-gradient(135deg, #5cb85c, #4cae4c);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #4cae4c, #5cb85c);
+}
+
+input[type="submit"]:active {
+    background: linear-gradient(135deg, #3d9e3d, #4cae4c);
+}
+
+/* Prediction Result Styling */
+h3 {
+    color: #4CAF50;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+/* Additional Styling for Success/Error */
+.text-success {
+    color: #28a745;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+.mt-4 {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2, h3 {
+        font-size: 18px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+    }
+}
