@@ -8,6 +8,10 @@ from src.Pipelines.Predict_pipeline import CustomData, PredictPipeline
 
 application = Flask(__name__)
 app = application
+@app.route('/')
+def index():
+    return render_template("index.html")
+
 
 @app.route('/predictdata', methods=['GET', 'POST'])
 def predict_datapoint():

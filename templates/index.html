@@ -1,3 +1,61 @@
-<h1>
-    Welcome to Home Page
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anemia Prediction Project</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 800px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+            <h1>Student Exam Performance Prediction Project</h1>
+            <p class="lead">This project predicts student performance in exams based on various medical parameters.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h4>About the Project</h4>
+            </div>
+            <div class="card-body">
+                <p>This project is designed to predict the student's exam performance using some key medical indicators such as Hemoglobin, MCH, MCHC, and MCV. These indicators provide insights into the student's health, which could impact their cognitive functions and overall performance.</p>
+                <p>The model takes data like Gender, Hemoglobin, MCH, MCHC, and MCV as input and predicts whether the student will perform well in exams.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h4>Components</h4>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Gender:</strong> Gender of the student (Male/Female)</li>
+                    <li><strong>Hemoglobin:</strong> A protein in the red blood cells that carries oxygen throughout the body. It is a key indicator of the student's general health.</li>
+                    <li><strong>MCH (Mean Corpuscular Hemoglobin):</strong> A measure of the average amount of hemoglobin in a red blood cell. It helps to identify anemia types.</li>
+                    <li><strong>MCHC (Mean Corpuscular Hemoglobin Concentration):</strong> A measure of the concentration of hemoglobin in a given volume of packed red blood cells. It reflects the oxygen-carrying capacity of the blood.</li>
+                    <li><strong>MCV (Mean Corpuscular Volume):</strong> A measure of the average volume of a red blood cell. It can be used to help diagnose different types of anemia.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Button to Redirect to Index Page -->
+        <div class="text-center mt-4">
+            <a href="/predictdata" class="btn btn-secondary">Go to Project</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
