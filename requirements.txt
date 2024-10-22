@@ -1,8 +1,6 @@
 pandas
 numpy
-scikit-learn
-seaborn
-matplotlib
+scikit-learn==1.5.2
 dill
 flask
--e .
+#-e .

@@ -1,8 +1,8 @@
-FROM python:3.8-buster 
+FROM python:3.11-buster
 
 # Set the working directory
 WORKDIR /app
-
+COPY . /app
 # Copy requirements.txt first for better caching
 COPY requirements.txt ./
 
@@ -12,10 +12,11 @@ RUN apt-get update -y && \
     rm -rf /var/lib/apt/lists/*
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade pip
+RUN pip install --default-timeout=100 --retries 5 --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code
 COPY . .
 
 # Run the application
-CMD ["python", "app.py"]
+CMD ["python3", "app.py"]
