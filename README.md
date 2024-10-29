@@ -1,4 +1,4 @@
-Anemia Prediction Project
+**bold text**Anemia Prediction Project**bold text**
 
 ![Anemia Prediction Project](https://github.com/santhipsengottuvel/Anemia-Prediction-Project/blob/main/Images/anemia_prediction.png)
 
