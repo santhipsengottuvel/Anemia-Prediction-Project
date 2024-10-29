@@ -77,9 +77,9 @@ pip install -r requirements.txt
 **3. Run the Flask application**
 ```bash
 python app.py
-Navigate to http://127.0.0.1:5000/ in your browser to use the application.
 ```
 **4. Docker Setup**
+Navigate to http://127.0.0.1:5000/ in your browser to use the application.
 To run the project in a Docker container:
 
 ```bash
