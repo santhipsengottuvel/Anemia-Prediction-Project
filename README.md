@@ -1,4 +1,5 @@
-**Anemia Prediction Project**
+# Anemia Prediction Project #
+## Introduction ##
 ![Anemia Prediction Project](https://github.com/santhipsengottuvel/Anemia-Prediction-Project/blob/main/Images/anemia_prediction.png)
 
 This project aims to predict anemia based on various blood parameters such as Hemoglobin, MCH (Mean Corpuscular Hemoglobin), MCHC (Mean Corpuscular Hemoglobin Concentration), MCV (Mean Corpuscular Volume), and gender using a machine learning model. The project has been containerized using Docker and deployed on Render.
@@ -6,31 +7,31 @@ This project aims to predict anemia based on various blood parameters such as He
 ![Anemia Prediction Project](https://github.com/santhipsengottuvel/Anemia-Prediction-Project/blob/main/Images/anemia_prediction1.png)
 
 
-**Project Overview**
+## Project Overview ##
 Anemia is a condition where the blood lacks enough healthy red blood cells or hemoglobin. This project helps in predicting the likelihood of anemia using important blood test parameters. The user provides inputs through a web interface, and the machine learning model predicts whether the person is anemic.
 
 
-**Features**
+## Features ##
 
-Web Interface: A user-friendly web interface built using Flask, where users can input their blood test parameters.
+**Web Interface**: A user-friendly web interface built using Flask, where users can input their blood test parameters.
 
-Machine Learning Model: The project uses a trained machine learning model to predict anemia based on input parameters.
+**Machine Learning Model**: The project uses a trained machine learning model to predict anemia based on input parameters.
 
-Deployment: The entire application has been containerized using Docker and deployed on Render for public use.
-
-
-**Key Components**
-
-Hemoglobin (Hb): The protein in red blood cells responsible for carrying oxygen.
-
-MCH (Mean Corpuscular Hemoglobin): Average mass of hemoglobin per red blood cell in a sample of blood.
-
-MCHC (Mean Corpuscular Hemoglobin Concentration): Average concentration of hemoglobin in red blood cells.
-
-MCV (Mean Corpuscular Volume): A measure of the average volume of a red blood cell.
+**Deployment**: The entire application has been containerized using Docker and deployed on Render for public use.
 
 
-**Tech Stack**
+## Key Components ##
+
+**Hemoglobin (Hb)**: The protein in red blood cells responsible for carrying oxygen.
+
+**MCH (Mean Corpuscular Hemoglobin)**: Average mass of hemoglobin per red blood cell in a sample of blood.
+
+**MCHC (Mean Corpuscular Hemoglobin Concentration)**: Average concentration of hemoglobin in red blood cells.
+
+**MCV (Mean Corpuscular Volume)**: A measure of the average volume of a red blood cell.
+
+
+## Tech Stack ##
 Python 3.11
 Flask for web development
 scikit-learn for machine learning
@@ -39,7 +40,7 @@ Render for deployment
 pandas, numpy for data manipulation and processing
 
 
-**Project Structure**
+## Project Structure ##
 ```bash
 Copy code
 ├── app.py                      # Flask app for handling web requests
@@ -60,7 +61,7 @@ Copy code
 ```
 
 
-**Installation and Usage**
+## Installation and Usage ##
 
 1. Clone the repository
 ```bash  
@@ -68,30 +69,24 @@ git clone https://github.com/santhipsengottuvel/Anemia-Prediction-Project.git
 cd Anemia-Prediction-Project
 ```
 
-2. Create and activate a virtual environment (optional but recommended)
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate'''
-```
-
-3. Install dependencies
+**2. Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run the Flask application
+**3. Run the Flask application**
 ```bash
 python app.py
 Navigate to http://127.0.0.1:5000/ in your browser to use the application.
 ```
-5. Docker Setup
+**4. Docker Setup**
 To run the project in a Docker container:
 
 ```bash
 docker build -t anemia_proj .
 docker run -p 5000:5000 anemia_proj
 ```
-6. Deployment on Render
+**5. Deployment on Render**
 The project is deployed on Render. You can access it live using the following link:
 
 
