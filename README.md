@@ -1,15 +1,16 @@
-**bold text**Anemia Prediction Project**bold text**
-
+**Anemia Prediction Project**
 ![Anemia Prediction Project](https://github.com/santhipsengottuvel/Anemia-Prediction-Project/blob/main/Images/anemia_prediction.png)
 
 This project aims to predict anemia based on various blood parameters such as Hemoglobin, MCH (Mean Corpuscular Hemoglobin), MCHC (Mean Corpuscular Hemoglobin Concentration), MCV (Mean Corpuscular Volume), and gender using a machine learning model. The project has been containerized using Docker and deployed on Render.
 
+![Anemia Prediction Project](https://github.com/santhipsengottuvel/Anemia-Prediction-Project/blob/main/Images/anemia_prediction1.png)
 
-Project Overview
+
+**Project Overview**
 Anemia is a condition where the blood lacks enough healthy red blood cells or hemoglobin. This project helps in predicting the likelihood of anemia using important blood test parameters. The user provides inputs through a web interface, and the machine learning model predicts whether the person is anemic.
 
 
-Features
+**Features**
 
 Web Interface: A user-friendly web interface built using Flask, where users can input their blood test parameters.
 
@@ -18,7 +19,7 @@ Machine Learning Model: The project uses a trained machine learning model to pre
 Deployment: The entire application has been containerized using Docker and deployed on Render for public use.
 
 
-Key Components
+**Key Components**
 
 Hemoglobin (Hb): The protein in red blood cells responsible for carrying oxygen.
 
@@ -29,7 +30,7 @@ MCHC (Mean Corpuscular Hemoglobin Concentration): Average concentration of hemog
 MCV (Mean Corpuscular Volume): A measure of the average volume of a red blood cell.
 
 
-Tech Stack
+**Tech Stack**
 Python 3.11
 Flask for web development
 scikit-learn for machine learning
@@ -38,7 +39,7 @@ Render for deployment
 pandas, numpy for data manipulation and processing
 
 
-Project Structure
+**Project Structure**
 ```bash
 Copy code
 ├── app.py                      # Flask app for handling web requests
@@ -59,7 +60,7 @@ Copy code
 ```
 
 
-Installation and Usage
+**Installation and Usage**
 
 1. Clone the repository
 ```bash  
