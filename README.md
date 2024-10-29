@@ -65,10 +65,10 @@ git clone https://github.com/santhipsengottuvel/Anemia-Prediction-Project.git
 cd Anemia-Prediction-Project
 
 2. Create and activate a virtual environment (optional but recommended)
-bash
+'''bash
 Copy code
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate'''
 
 3. Install dependencies
 bash
