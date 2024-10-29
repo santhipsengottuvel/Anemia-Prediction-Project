@@ -37,23 +37,7 @@ pandas, numpy for data manipulation and processing
 
 
 Project Structure
-bash
-Copy code
-├── app.py                      # Flask app for handling web requests
-├── src/
-│   ├── Pipelines/
-│   │   ├── Predict_pipeline.py  # Pipeline for preprocessing and prediction
-│   ├── exception.py             # Custom exception handling
-│   ├── utils.py                 # Utility functions for saving/loading models
-├── templates/
-│   ├── index.html               # Main homepage for input
-│   ├── home.html                # Result page after prediction
-├── Dockerfile                   # Docker configuration
-├── requirements.txt             # Python dependencies
-├── artifacts/
-│   ├── model.pkl                # Trained model
-│   ├── preprocessor.pkl         # Preprocessing object (scaler)
-├── README.md                    # Project documentation
+```bash ├── app.py # Flask app for handling web requests ├── src/ │ ├── Pipelines/ │ │ ├── Predict_pipeline.py # Pipeline for preprocessing and prediction │ ├── exception.py # Custom exception handling │ ├── utils.py # Utility functions for saving/loading models ├── templates/ │ ├── index.html # Main homepage for input │ ├── home.html # Result page after prediction ├── Dockerfile # Docker configuration ├── requirements.txt # Python dependencies ├── artifacts/ │ ├── model.pkl # Trained model │ ├── preprocessor.pkl # Preprocessing object (scaler) ├── README.md # Project documentation ```
 
 
 Installation and Usage
