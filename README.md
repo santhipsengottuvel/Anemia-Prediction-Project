@@ -1,5 +1,7 @@
 Anemia Prediction Project
 
+![Anemia Prediction Project](images/anemia_prediction.png)
+
 This project aims to predict anemia based on various blood parameters such as Hemoglobin, MCH (Mean Corpuscular Hemoglobin), MCHC (Mean Corpuscular Hemoglobin Concentration), MCV (Mean Corpuscular Volume), and gender using a machine learning model. The project has been containerized using Docker and deployed on Render.
 
 
@@ -60,33 +62,31 @@ Copy code
 Installation and Usage
 
 1. Clone the repository
-```bash Copy code 
-git clone https://github.com/santhipsengottuvel/Anemia-Prediction-Project.git cd Anemia-Prediction-Project
+```bash  
+git clone https://github.com/santhipsengottuvel/Anemia-Prediction-Project.git 
+cd Anemia-Prediction-Project
 ```
 
 2. Create and activate a virtual environment (optional but recommended)
 ```bash
-Copy code
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate'''
 ```
 
 3. Install dependencies
 ```bash
-Copy code
 pip install -r requirements.txt
 ```
 
 4. Run the Flask application
 ```bash
-Copy code
 python app.py
 Navigate to http://127.0.0.1:5000/ in your browser to use the application.
 ```
 5. Docker Setup
 To run the project in a Docker container:
 
-```bash Copy code
+```bash
 docker build -t anemia_proj .
 docker run -p 5000:5000 anemia_proj
 ```
