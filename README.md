@@ -93,5 +93,5 @@ docker run -p 5000:5000 anemia_proj
 6. Deployment on Render
 The project is deployed on Render. You can access it live using the following link:
 
-Anemia Prediction Web App
-anemia-proj-latest.onrender.com
+
+[Anemia Prediction Web App](anemia-proj-latest.onrender.co)
