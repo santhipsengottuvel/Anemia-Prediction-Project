@@ -60,10 +60,7 @@ Copy code
 Installation and Usage
 
 1. Clone the repository
-bash
-Copy code
-git clone https://github.com/santhipsengottuvel/Anemia-Prediction-Project.git
-cd Anemia-Prediction-Project
+```bash Copy code git clone https://github.com/santhipsengottuvel/Anemia-Prediction-Project.git cd Anemia-Prediction-Project
 ```
 
 2. Create and activate a virtual environment (optional but recommended)
@@ -88,8 +85,7 @@ Navigate to http://127.0.0.1:5000/ in your browser to use the application.
 5. Docker Setup
 To run the project in a Docker container:
 
-```bash
-Copy code
+```bash Copy code
 docker build -t anemia_proj .
 docker run -p 5000:5000 anemia_proj
 ```
