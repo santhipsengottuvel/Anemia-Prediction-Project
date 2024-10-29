@@ -1,6 +1,6 @@
 Anemia Prediction Project
 
-![Anemia Prediction Project](images/anemia_prediction.png)
+![Anemia Prediction Project](Images/anemia_prediction.png)
 
 This project aims to predict anemia based on various blood parameters such as Hemoglobin, MCH (Mean Corpuscular Hemoglobin), MCHC (Mean Corpuscular Hemoglobin Concentration), MCV (Mean Corpuscular Volume), and gender using a machine learning model. The project has been containerized using Docker and deployed on Render.
 
