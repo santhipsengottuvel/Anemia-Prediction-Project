@@ -78,8 +78,9 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
-**4. Docker Setup**
 Navigate to http://127.0.0.1:5000/ in your browser to use the application.
+
+**4. Docker Setup**
 To run the project in a Docker container:
 
 ```bash
