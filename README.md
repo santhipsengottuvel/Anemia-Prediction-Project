@@ -60,7 +60,8 @@ Copy code
 Installation and Usage
 
 1. Clone the repository
-```bash Copy code git clone https://github.com/santhipsengottuvel/Anemia-Prediction-Project.git cd Anemia-Prediction-Project
+```bash Copy code 
+git clone https://github.com/santhipsengottuvel/Anemia-Prediction-Project.git cd Anemia-Prediction-Project
 ```
 
 2. Create and activate a virtual environment (optional but recommended)
